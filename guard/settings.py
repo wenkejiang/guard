@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-
+import datetime
 import os
 import sys
 
@@ -30,7 +30,6 @@ SECRET_KEY = '8fqbg)y3#3gxl%0i%g-r#34g)&2spt4=1i$hg-8o*j3rbwn2s6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -42,7 +41,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users.apps.UsersConfig',
+    'rest_framework',
+    'django_filters',
+    'rest_framework.authtoken'
+
 ]
+
+
+ALLOWED_HOSTS = ['*']
+
+AUTH_USER_MODEL = 'users.UserProfile'
+
+# APPEND_SLASH=False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -74,6 +85,27 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'guard.wsgi.application'
 
+REST_FRAMEWORK = {
+
+    # 权限认证
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    # 身份验证
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+    'EXCEPTION_HANDLER': 'apps.utils.custom_execption.custom_exception_handler',
+
+}
+
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),  # 生成的token有效期
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'apps.utils.jwt_response_payload_handler.jwt_response_payload_handler',  # response中token的payload部分处理函数
+
+}
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

@@ -2,21 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="564a4f9d-4b0c-48b9-bd77-821484f03dd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/utils/APIResponse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/utils/custom_execption.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/utils/jwt_response_payload_handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/utils/permissions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/guard/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/guard/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,9 +48,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -57,6 +68,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="guard.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -86,7 +98,12 @@
       <option name="presentableId" value="Default" />
       <updated>1590730822542</updated>
       <workItem from="1590730825147" duration="609000" />
-      <workItem from="1590731924762" duration="1552000" />
+      <workItem from="1590731924762" duration="5778000" />
+      <workItem from="1590807383702" duration="205000" />
+      <workItem from="1590975831506" duration="9221000" />
+      <workItem from="1591002961344" duration="510000" />
+      <workItem from="1591003550697" duration="258000" />
+      <workItem from="1591005468668" duration="18942000" />
     </task>
     <task id="LOCAL-00001" summary="修改setting.xml文件，换成mysql数据库&#10;新增忽略文件">
       <created>1590732272331</created>
@@ -102,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590734414079</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修改setting.xml文件，配置apps文件夹&#10;新增users APP">
+      <created>1590734656863</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590734656863</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,21 +135,58 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改setting.xml文件，换成mysql数据库&#10;新增忽略文件" />
     <MESSAGE value="修改setting.xml文件，配置logging模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改setting.xml文件，配置logging模块" />
+    <MESSAGE value="修改setting.xml文件，配置apps文件夹&#10;新增users APP" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改setting.xml文件，配置apps文件夹&#10;新增users APP" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="554" y="137" key="CommitChangelistDialog2" timestamp="1590734413941">
+    <state x="554" y="137" key="CommitChangelistDialog2" timestamp="1590734656726">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="554" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1590734413941" />
-    <state x="560" y="280" key="Vcs.Push.Dialog.v2" timestamp="1590734416098">
+    <state x="554" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1590734656726" />
+    <state width="936" height="375" key="GridCell.Tab.0.bottom" timestamp="1591008439216">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="560" y="280" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1590734416098" />
-    <state x="639" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1590730825689">
+    <state width="936" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439216" />
+    <state width="936" height="375" key="GridCell.Tab.0.center" timestamp="1591008439215">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590730825689" />
+    <state width="936" height="375" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439215" />
+    <state width="936" height="375" key="GridCell.Tab.0.left" timestamp="1591008439214">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="936" height="375" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439214" />
+    <state width="936" height="375" key="GridCell.Tab.0.right" timestamp="1591008439215">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="936" height="375" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439215" />
+    <state width="936" height="375" key="GridCell.Tab.1.bottom" timestamp="1591008439218">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="936" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439218" />
+    <state width="936" height="375" key="GridCell.Tab.1.center" timestamp="1591008439217">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="936" height="375" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439217" />
+    <state width="936" height="375" key="GridCell.Tab.1.left" timestamp="1591008439217">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="936" height="375" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439217" />
+    <state width="936" height="375" key="GridCell.Tab.1.right" timestamp="1591008439218">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="936" height="375" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439218" />
+    <state x="469" y="179" key="SettingsEditor" timestamp="1590737170083">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1590737170083" />
+    <state x="560" y="280" key="Vcs.Push.Dialog.v2" timestamp="1590734658342">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="280" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1590734658342" />
+    <state x="639" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1591005469182">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591005469182" />
     <state x="749" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590731929052">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
