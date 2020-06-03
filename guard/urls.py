@@ -16,6 +16,7 @@ Including another URLconf
 
 from django.conf.urls import url, include
 from django.contrib import admin
+from rest_framework import views
 from rest_framework_jwt.views import obtain_jwt_token
 
 from users.views import *
@@ -35,7 +36,9 @@ urlpatterns = [
     url(r'docs/', include_docs_urls(title="测试平台")),
     # jwt的认证接口
     url(r'^login/', obtain_jwt_token),
-
-    url(r'^getInfo/', UserViewset.as_view({'get': 'retrieve'}))
+    # 获取用户信息
+    url(r'^getInfo/', UserViewset.as_view({'get': 'retrieve'})),
+    # 获取用户列表
+    url(r'^getUserList/', UserViewset.as_view({'get': 'list'}))
 ]
 
