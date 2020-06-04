@@ -1,57 +1,17 @@
-# -*- coding: utf-8 -*-
-# 作者: jiangwenke
-# 创建时间: 2020/6/1   
-# 修改时间: 3:33 下午   
-# IDE: PyCharm
-import json
-
+from rest_framework.response import Response
 from rest_framework.views import exception_handler
 
 def custom_exception_handler(exc, context):
-    # Call REST framework's default exception handler first,
-    # to get the standard error response.
+    # 先调用DRF默认的 exception_handler 方法, 对异常进行处理，
+    # 如果处理成功，会返回一个`Response`类型的对象
     response = exception_handler(exc, context)
 
-    # Now add the HTTP status code to the response.
-    if response is not None:
-
-        data = str(response.data)
-        response.data.clear()
-        response.data['code'] = response.status_code
-        response.data['data'] = data
-
-        if response.status_code == 404:
-            try:
-                response.data['message'] = response.data.pop('detail')
-                response.data['message'] = "Not found"
-            except KeyError:
-                response.data['message'] = "Not found"
-
-        if response.status_code == 400:
-            response.status_code = 200
-
-            response.data['message'] = "Import Error"
-
-        elif response.status_code == 401:
-            response.status_code = 200
-            response.data['message'] = "Auth failed"
-
-
-        elif response.status_code >= 500:
-            response.status_code = 200
-            response.data['message'] =  "Internal service errors"
-
-
-        elif response.status_code == 403:
-            response.status_code = 200
-            response.data['message'] = "Access denied"
-
-
-        elif response.status_code == 405:
-            response.status_code = 200
-            response.data['message'] = 'Request method error'
+    if response is None:
+        # 项目出错了，但DRF框架对出错的异常没有处理,
+        # 可以在此处对异常进行统一处理，比如：保存出错信息到日志文件
+        view = context['view']      # 出错的视图
+        error = '服务器内部错误, %s' % exc
+        print('%s: %s' % (view, error))
+        return Response({'detail': error}, status=500)
 
     return response
-
-#无需调用，报错的时候他自己会调用！！
-

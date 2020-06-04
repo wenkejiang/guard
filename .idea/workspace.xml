@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="564a4f9d-4b0c-48b9-bd77-821484f03dd9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/utils/render_response.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/APIResponse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/custom_execption.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/custom_execption.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/jwt_response_payload_handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/permissions.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/guard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/guard/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/guard/urls.py" afterDir="false" />
     </list>
@@ -45,7 +51,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -54,32 +60,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="guard" type="Python.DjangoServer" factoryName="Django server">
-      <module name="guard" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="guard.settings" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -97,7 +77,11 @@
       <workItem from="1590975831506" duration="9221000" />
       <workItem from="1591002961344" duration="510000" />
       <workItem from="1591003550697" duration="258000" />
-      <workItem from="1591005468668" duration="22569000" />
+      <workItem from="1591005468668" duration="22802000" />
+      <workItem from="1591166059280" duration="58000" />
+      <workItem from="1591166259886" duration="148000" />
+      <workItem from="1591168905705" duration="23000" />
+      <workItem from="1591183086465" duration="21566000" />
     </task>
     <task id="LOCAL-00001" summary="修改setting.xml文件，换成mysql数据库&#10;新增忽略文件">
       <created>1590732272331</created>
@@ -127,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591111240305</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="用户信息接口getUserList">
+      <created>1591165985669</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591165985670</updated>
+    </task>
+    <task id="LOCAL-00006" summary="用户信息接口getUserList">
+      <created>1591166029075</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591166029075</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,14 +136,31 @@
     <MESSAGE value="修改setting.xml文件，配置logging模块" />
     <MESSAGE value="修改setting.xml文件，配置apps文件夹&#10;新增users APP" />
     <MESSAGE value="登录和注册" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录和注册" />
+    <MESSAGE value="用户信息接口getUserList" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户信息接口getUserList" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="554" y="137" key="CommitChangelistDialog2" timestamp="1591165985525">
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591185693162">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591185693162" />
+    <state x="703" y="350" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591240924139">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="703" y="350" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1591240924139" />
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591241273847">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591241273847" />
+    <state x="554" y="137" key="CommitChangelistDialog2" timestamp="1591166028979">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="416" y="67" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591111240114" />
-    <state x="554" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1591165985525" />
+    <state x="554" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1591166028979" />
+    <state x="748" y="301" key="FileChooserDialogImpl" timestamp="1591185744830">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="748" y="301" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1591185744830" />
     <state width="936" height="375" key="GridCell.Tab.0.bottom" timestamp="1591008439216">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -178,22 +193,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="936" height="375" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439218" />
-    <state x="469" y="179" key="SettingsEditor" timestamp="1590737170083">
+    <state x="469" y="179" key="SettingsEditor" timestamp="1591185758105">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1590737170083" />
-    <state x="420" y="233" key="Vcs.Push.Dialog.v2" timestamp="1591111243011">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1591185758105" />
+    <state x="560" y="280" key="Vcs.Push.Dialog.v2" timestamp="1591166276329">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="420" y="233" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591111243011" />
-    <state x="560" y="280" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1590734658342" />
-    <state x="639" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1591005469182">
+    <state x="560" y="280" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1591166276329" />
+    <state x="639" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1591183336851">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591005469182" />
+    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591183336851" />
     <state x="749" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590731929052">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="749" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1590731929052" />
+    <state x="378" y="207" width="756" height="486" key="find.popup" timestamp="1591276132722">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="378" y="207" width="756" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1591276132722" />
   </component>
 </project>

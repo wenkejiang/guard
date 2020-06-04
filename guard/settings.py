@@ -13,7 +13,6 @@ import datetime
 import os
 import sys
 
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,8 +29,6 @@ SECRET_KEY = '8fqbg)y3#3gxl%0i%g-r#34g)&2spt4=1i$hg-8o*j3rbwn2s6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -46,7 +43,6 @@ INSTALLED_APPS = [
     'django_filters',
 
 ]
-
 
 ALLOWED_HOSTS = ['*']
 
@@ -86,9 +82,14 @@ WSGI_APPLICATION = 'guard.wsgi.application'
 
 REST_FRAMEWORK = {
 
-    # 权限认证
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
+    # 'EXCEPTION_HANDLER': ('apps.utils.custom_execption.custom_exception_handler'),
+    # # 权限认证
+    # 'DEFAULT_PERMISSION_CLASSES': (
+    #     'rest_framework.permissions.IsAuthenticated',
+    # ),
+    # # 返回结构自定义
+    'DEFAULT_RENDERER_CLASSES': (
+        'utils.render_response.CustomJsonRenderer',
     ),
     # 身份验证
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -96,13 +97,18 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ),
-    'EXCEPTION_HANDLER': 'apps.utils.custom_execption.custom_exception_handler',
+
+    # 设置分页
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,
+
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',)
 
 }
 
 JWT_AUTH = {
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),  # 生成的token有效期
-    'JWT_RESPONSE_PAYLOAD_HANDLER': 'apps.utils.jwt_response_payload_handler.jwt_response_payload_handler',  # response中token的payload部分处理函数
+    # 'JWT_RESPONSE_PAYLOAD_HANDLER': 'apps.utils.jwt_response_payload_handler.jwt_response_payload_handler',  # response中token的payload部分处理函数
 
 }
 
@@ -119,7 +125,6 @@ DATABASES = {
         'PORT': '3306'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -139,7 +144,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
@@ -157,7 +161,6 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
 
 import time
 

@@ -13,7 +13,7 @@ class UserDetailSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = User
-        fields = ("id", "username",  "email")
+        fields = ("id", "name", "date_joined", "username",  "email")
 
 class UserRegSerializer(serializers.ModelSerializer):
     username = serializers.CharField(label="用户名", help_text="用户名", required=True, allow_blank=False,
@@ -37,4 +37,4 @@ class UserRegSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ("username", "email", "password","password1")
+        fields = ("username", "email", "name","password","password1")

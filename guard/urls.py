@@ -25,9 +25,9 @@ from rest_framework.routers import DefaultRouter
 
 router=DefaultRouter()
 # 配置注册的URL
-router.register('register',UserViewset,basename='register')
+router.register('register',UserRegViewset,basename='register')
 
-# 获取用户信息
+# # 获取用户信息
 # router.register('getInfo',UserViewset,basename='getInfo')
 
 urlpatterns = [
@@ -39,6 +39,10 @@ urlpatterns = [
     # 获取用户信息
     url(r'^getInfo/', UserViewset.as_view({'get': 'retrieve'})),
     # 获取用户列表
-    url(r'^getUserList/', UserViewset.as_view({'get': 'list'}))
+    url(r'^getUserList/', UserViewset.as_view({'get': 'list'})),
+
+    url(r'^deleteUser/', UserViewset.as_view(
+        {'post': 'destroy'})),
+
 ]
 
