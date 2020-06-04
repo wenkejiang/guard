@@ -26,7 +26,7 @@ class CustomJsonRenderer(JSONRenderer):
                     msg = data.pop('msg', '请求成功')
                 else:
                     code = data.pop('code', renderer_context["response"].status_code)
-                    msg =  data.pop('msg', '请求成功')
+                    msg =  data.pop('msg', str(list(data.values())))
 
             else:
                 msg = '返回成功'
