@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="564a4f9d-4b0c-48b9-bd77-821484f03dd9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/utils/scheduler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/utils/weChat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/utils/render_response.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/render_response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/guard/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +55,46 @@
       <recent name="$PROJECT_DIR$/apps" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="weChat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="guard" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name=" PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="guard.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/weChat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.weChat" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -73,7 +115,7 @@
       <workItem from="1591166059280" duration="58000" />
       <workItem from="1591166259886" duration="148000" />
       <workItem from="1591168905705" duration="23000" />
-      <workItem from="1591183086465" duration="22682000" />
+      <workItem from="1591183086465" duration="28284000" />
     </task>
     <task id="LOCAL-00001" summary="修改setting.xml文件，换成mysql数据库&#10;新增忽略文件">
       <created>1590732272331</created>
@@ -131,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591284448734</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="正则匹配汉字">
+      <created>1591286254297</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591286254297</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,12 +193,14 @@
     <MESSAGE value="登录和注册" />
     <MESSAGE value="用户信息接口getUserList" />
     <MESSAGE value="用户筛选，自定义response" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户筛选，自定义response" />
+    <MESSAGE value="正则匹配汉字" />
+    <option name="LAST_COMMIT_MESSAGE" value="正则匹配汉字" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591185693162">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="318" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591411718384">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="318" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1591411718384" />
     <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591185693162" />
     <state x="703" y="350" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591240924139">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -159,30 +210,34 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591241273847" />
-    <state x="416" y="67" key="CommitChangelistDialog2" timestamp="1591284448571">
+    <state x="416" y="67" key="CommitChangelistDialog2" timestamp="1591286254101">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="416" y="67" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591284448571" />
+    <state x="416" y="67" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591286254101" />
     <state x="554" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1591166028979" />
     <state x="748" y="301" key="FileChooserDialogImpl" timestamp="1591185744830">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="748" y="301" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1591185744830" />
-    <state width="936" height="375" key="GridCell.Tab.0.bottom" timestamp="1591008439216">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1392" height="245" key="GridCell.Tab.0.bottom" timestamp="1591411719988">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1392" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591411719988" />
     <state width="936" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439216" />
-    <state width="936" height="375" key="GridCell.Tab.0.center" timestamp="1591008439215">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1392" height="245" key="GridCell.Tab.0.center" timestamp="1591411719986">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1392" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1591411719986" />
     <state width="936" height="375" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439215" />
-    <state width="936" height="375" key="GridCell.Tab.0.left" timestamp="1591008439214">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1392" height="245" key="GridCell.Tab.0.left" timestamp="1591411719985">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1392" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1591411719985" />
     <state width="936" height="375" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439214" />
-    <state width="936" height="375" key="GridCell.Tab.0.right" timestamp="1591008439215">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1392" height="245" key="GridCell.Tab.0.right" timestamp="1591411719987">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1392" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1591411719987" />
     <state width="936" height="375" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439215" />
     <state width="936" height="375" key="GridCell.Tab.1.bottom" timestamp="1591008439218">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -204,10 +259,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1591185758105" />
-    <state x="420" y="233" key="Vcs.Push.Dialog.v2" timestamp="1591284465462">
+    <state x="420" y="233" key="Vcs.Push.Dialog.v2" timestamp="1591286264876">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="420" y="233" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591284465462" />
+    <state x="420" y="233" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591286264876" />
     <state x="560" y="280" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1591166276329" />
     <state x="639" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1591183336851">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -217,9 +272,12 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="749" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1590731929052" />
-    <state x="378" y="207" width="756" height="486" key="find.popup" timestamp="1591276132722">
+    <state x="378" y="207" width="756" height="486" key="find.popup" timestamp="1591375004595">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="378" y="207" width="756" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1591276132722" />
+    <state x="378" y="207" width="756" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1591375004595" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/guard$weChat.coverage" NAME="weChat Coverage Results" MODIFIED="1591411719977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
   </component>
 </project>

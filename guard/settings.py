@@ -239,3 +239,10 @@ LOGGING = {
         },
     }
 }
+
+
+# 业务配置
+# 企业微信信息配置
+CORPID = 'wwcaca99303b016ebc'
+SECRET = 'X1ofWFo0iS-Mlism2nxvIvSl_ZKC6tzHo1d3KROv7Mg'
+AGENTID = 1000023
