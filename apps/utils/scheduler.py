@@ -3,15 +3,27 @@
 # 创建时间: 2020/6/5   
 # 修改时间: 11:50 下午   
 # IDE: PyCharm
-import sched
 
 from apscheduler.events import EVENT_JOB_EXECUTED, EVENT_JOB_ERROR
+from apscheduler.executors.pool import ThreadPoolExecutor, ProcessPoolExecutor
+from apscheduler.jobstores.sqlalchemy import SQLAlchemyJobStore
 from apscheduler.schedulers.background import BackgroundScheduler
 
-#使用sqlalchemy作业存储器
 from utils.weChat import wechat
 
-url='mysql+pymysql://root:Dkaixy@917810@106.13.238.8:3306/guard?charset=utf8'
+jobstores = {
+    'default': SQLAlchemyJobStore(url='sqlite:///db.sqlite3')
+
+}
+job_defaults = {
+    'coalesce': True,
+    'max_instances': 2,
+    'misfire_grace_time': 60
+}
+executors = {
+    'default': ThreadPoolExecutor(10),  # 默认线程数
+    'processpool': ProcessPoolExecutor(3)  # 默认进程
+}
 
 
 def my_listener(event):
@@ -19,11 +31,9 @@ def my_listener(event):
         wechat.send_message('调度执行异常, 请检日志记录', 'zhangwei02,jiangwenke')
 
 
-scheduler = BackgroundScheduler()
+scheduler = BackgroundScheduler(jobstores=jobstores, executors=executors, job_defaults=job_defaults)
 
-scheduler.add_jobstore("sqlalchemy", url=url)
 
 scheduler.add_listener(my_listener, EVENT_JOB_EXECUTED | EVENT_JOB_ERROR)
 
 scheduler.start()
-

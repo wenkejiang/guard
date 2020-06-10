@@ -15,10 +15,9 @@ Including another URLconf
 """
 
 from django.conf.urls import url, include
-from django.contrib import admin
-from rest_framework import views
 from rest_framework_jwt.views import obtain_jwt_token
 
+from monitor.views import JobViewset, GitInfoViewset
 from users.views import *
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
@@ -27,8 +26,11 @@ router=DefaultRouter()
 # 配置注册的URL
 router.register('register',UserRegViewset,basename='register')
 
-# # 获取用户信息
-# router.register('getInfo',UserViewset,basename='getInfo')
+# # Job信息
+router.register('job', JobViewset,basename='monitorJob')
+
+# # 获取git信息
+router.register('getUrl', GitInfoViewset,basename='getUrl')
 
 urlpatterns = [
     url(r'', include(router.urls)),
@@ -40,6 +42,12 @@ urlpatterns = [
     url(r'^getInfo/', UserViewset.as_view({'get': 'retrieve'})),
     # 获取用户列表
     url(r'^getUserList/', UserViewset.as_view({'get': 'list'})),
+
+    # 获取git info数据入库
+    url(r'^gitInfo/', GitInfoViewset.as_view({'get': 'git_info'}), name="gitInfo"),
+
+    # 获取项目 info数据入库
+    url(r'^projectInfo/', GitInfoViewset.as_view({'get': 'project_info'}), name="projectInfo"),
 
     url(r'^deleteUser/', UserViewset.as_view(
         {'post': 'destroy'})),

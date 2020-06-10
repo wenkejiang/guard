@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="564a4f9d-4b0c-48b9-bd77-821484f03dd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/monitor/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/monitor/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/monitor/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/monitor/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/monitor/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/monitor/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/monitor/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/monitor/auto_operation/autoGitInfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/monitor/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/utils/gitUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/monitor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/monitor/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/monitor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/monitor/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/render_response.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/render_response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/scheduler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/weChat.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/weChat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/guard/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/guard/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,25 +49,95 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/logs/info-2020-06-06.log" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/apps" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django server.guard">
+    <configuration name="autoGitInfo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="guard" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name=" PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="guard.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/monitor/auto_operation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/monitor/auto_operation/autoGitInfo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gitUtil" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="guard" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name=" PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="guard.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/gitUtil.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="weChat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="guard" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
         <env name=" PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="guard.settings" />
       </envs>
@@ -92,8 +166,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="guard" type="Python.DjangoServer" factoryName="Django server">
+      <module name="guard" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="guard.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.pyenv/versions/guard/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.guard" />
+      <item itemvalue="Python.weChat" />
+      <item itemvalue="Python.gitUtil" />
+      <item itemvalue="Python.autoGitInfo" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.autoGitInfo" />
+        <item itemvalue="Python.gitUtil" />
         <item itemvalue="Python.weChat" />
       </list>
     </recent_temporary>
@@ -118,7 +234,8 @@
       <workItem from="1591166059280" duration="58000" />
       <workItem from="1591166259886" duration="148000" />
       <workItem from="1591168905705" duration="23000" />
-      <workItem from="1591183086465" duration="28635000" />
+      <workItem from="1591183086465" duration="48363000" />
+      <workItem from="1591439012846" duration="17945000" />
     </task>
     <task id="LOCAL-00001" summary="修改setting.xml文件，换成mysql数据库&#10;新增忽略文件">
       <created>1590732272331</created>
@@ -190,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591411975701</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="新建monitor的APP">
+      <created>1591412131500</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1591412131500</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,13 +329,14 @@
     <MESSAGE value="用户筛选，自定义response" />
     <MESSAGE value="正则匹配汉字" />
     <MESSAGE value="调度任务和发送信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="调度任务和发送信息" />
+    <MESSAGE value="新建monitor的APP" />
+    <option name="LAST_COMMIT_MESSAGE" value="新建monitor的APP" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="318" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591411718384">
+    <state x="318" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591627074474">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="318" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1591411718384" />
+    <state x="318" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1591627074474" />
     <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591185693162" />
     <state x="703" y="350" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591240924139">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -221,34 +346,34 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591241273847" />
-    <state x="416" y="67" key="CommitChangelistDialog2" timestamp="1591411975547">
+    <state x="416" y="67" key="CommitChangelistDialog2" timestamp="1591412131364">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="416" y="67" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591411975547" />
+    <state x="416" y="67" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591412131364" />
     <state x="554" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1591166028979" />
     <state x="748" y="301" key="FileChooserDialogImpl" timestamp="1591185744830">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="748" y="301" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1591185744830" />
-    <state width="1392" height="245" key="GridCell.Tab.0.bottom" timestamp="1591412037785">
+    <state width="1392" height="351" key="GridCell.Tab.0.bottom" timestamp="1591627740324">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1392" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591412037785" />
+    <state width="1392" height="351" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591627740324" />
     <state width="936" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439216" />
-    <state width="1392" height="245" key="GridCell.Tab.0.center" timestamp="1591412037783">
+    <state width="1392" height="351" key="GridCell.Tab.0.center" timestamp="1591627740322">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1392" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1591412037783" />
+    <state width="1392" height="351" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1591627740322" />
     <state width="936" height="375" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439215" />
-    <state width="1392" height="245" key="GridCell.Tab.0.left" timestamp="1591412037782">
+    <state width="1392" height="351" key="GridCell.Tab.0.left" timestamp="1591627740321">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1392" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1591412037782" />
+    <state width="1392" height="351" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1591627740321" />
     <state width="936" height="375" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439214" />
-    <state width="1392" height="245" key="GridCell.Tab.0.right" timestamp="1591412037784">
+    <state width="1392" height="351" key="GridCell.Tab.0.right" timestamp="1591627740323">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1392" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1591412037784" />
+    <state width="1392" height="351" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1591627740323" />
     <state width="936" height="375" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439215" />
     <state width="936" height="375" key="GridCell.Tab.1.bottom" timestamp="1591008439218">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -270,25 +395,36 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1591185758105" />
-    <state x="420" y="233" key="Vcs.Push.Dialog.v2" timestamp="1591411977385">
+    <state x="420" y="233" key="Vcs.Push.Dialog.v2" timestamp="1591412133260">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="420" y="233" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591411977385" />
+    <state x="420" y="233" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591412133260" />
     <state x="560" y="280" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1591166276329" />
-    <state x="639" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1591183336851">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="479" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1591439013429">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="479" y="310" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1591439013429" />
     <state x="639" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591183336851" />
+    <state x="93" y="21" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591432211773">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="93" y="21" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1591432211773" />
     <state x="749" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590731929052">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="749" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1590731929052" />
-    <state x="378" y="207" width="756" height="486" key="find.popup" timestamp="1591375004595">
+    <state x="378" y="207" width="756" height="486" key="find.popup" timestamp="1591441766655">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="378" y="207" width="756" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1591375004595" />
+    <state x="378" y="207" width="756" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1591441766655" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1591415457109">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1591415457109" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/guard$gitUtil.coverage" NAME="gitUtil Coverage Results" MODIFIED="1591616197529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
+    <SUITE FILE_PATH="coverage/guard$autoGitInfo.coverage" NAME="autoGitInfo Coverage Results" MODIFIED="1591627237157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/monitor/auto_operation" />
     <SUITE FILE_PATH="coverage/guard$weChat.coverage" NAME="weChat Coverage Results" MODIFIED="1591411719977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
   </component>
 </project>

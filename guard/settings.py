@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'rest_framework',
     'django_filters',
+    'monitor.apps.MonitorConfig',
 
 ]
 
@@ -84,9 +85,9 @@ REST_FRAMEWORK = {
 
     # 'EXCEPTION_HANDLER': ('apps.utils.custom_execption.custom_exception_handler'),
     # # 权限认证
-    # 'DEFAULT_PERMISSION_CLASSES': (
-    #     'rest_framework.permissions.IsAuthenticated',
-    # ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
     # # 返回结构自定义
     'DEFAULT_RENDERER_CLASSES': (
         'utils.render_response.CustomJsonRenderer',
@@ -246,3 +247,10 @@ LOGGING = {
 CORPID = 'wwcaca99303b016ebc'
 SECRET = 'X1ofWFo0iS-Mlism2nxvIvSl_ZKC6tzHo1d3KROv7Mg'
 AGENTID = 1000023
+
+
+# git信息
+# git group的id
+GROUPS_ID = '617'
+# token
+PRIVATE_TOKEN = 'zHc4USHE1FybCsb9m-wi'

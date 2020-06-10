@@ -7,8 +7,6 @@ from rest_framework.renderers import JSONRenderer
 
 class CustomJsonRenderer(JSONRenderer):
     def render(self, data, accepted_media_type=None, renderer_context=None):
-
-        print(data)
         """
         格式{
             'code':xxx,
