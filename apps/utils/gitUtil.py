@@ -66,13 +66,6 @@ class Git_Cmd(object):
     2.git clone
     """
 
-    # def __init__(self, script_path=settings.script_path, project_name=None, project_path=None, cmd=None):
-    #     self.script_path = script_path
-    #     self.project_name = project_name
-    #     self.project_path = project_path
-    #     self.cmd = cmd
-    #     self.script_projrct_path = script_path + '/' + project_name
-
     def get_clone_project(self,project_path,project_name):
         """
         从git上clone项目到本地
@@ -94,10 +87,12 @@ class Git_Cmd(object):
         :return:
         """
         try:
+            logger.info("---------开始切换项目路径操作---------------")
             os.chdir(script_projrct_path)
         except Exception as e:
             raise Exception(e)
         try:
+            logger.info("---------开始执行git pull 命令---------------")
             util = Utils()
             util.run_cmd("git fetch --all")
             util.run_cmd('git reset --hard origin/master')

@@ -49,7 +49,7 @@ urlpatterns = [
     # 获取项目 info数据入库
     url(r'^projectInfo/', GitInfoViewset.as_view({'get': 'project_info'}), name="projectInfo"),
 
-    url(r'^script/', ScriptViewset.as_view({'get': 'script'}), name="script"),
+    url(r'^script/', ScriptViewset.as_view({'post': 'script'}), name="script"),
 
     url(r'^deleteUser/', UserViewset.as_view(
         {'post': 'destroy'})),

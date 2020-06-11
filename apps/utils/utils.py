@@ -17,7 +17,6 @@ class Utils(object):
         :return:
         """
         result = subprocess.getstatusoutput(cmd)
-        print(result)
         if result[0] == 0:
             logger.info('执行shell命令成功：{shell}'.format(shell=cmd))
             return result[1]
