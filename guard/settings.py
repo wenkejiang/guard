@@ -254,3 +254,6 @@ AGENTID = 1000023
 GROUPS_ID = '617'
 # token
 PRIVATE_TOKEN = 'zHc4USHE1FybCsb9m-wi'
+
+script_path='/Users/jiangwenke/DevOps/test_scripts/httprunner_scripts'
+target_path='/Users/jiangwenke/DevOps/test_scripts/httprunner_reports'

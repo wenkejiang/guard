@@ -17,7 +17,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from rest_framework_jwt.views import obtain_jwt_token
 
-from monitor.views import JobViewset, GitInfoViewset
+from monitor.views import JobViewset, GitInfoViewset, ScriptViewset
 from users.views import *
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
@@ -48,6 +48,8 @@ urlpatterns = [
 
     # 获取项目 info数据入库
     url(r'^projectInfo/', GitInfoViewset.as_view({'get': 'project_info'}), name="projectInfo"),
+
+    url(r'^script/', ScriptViewset.as_view({'get': 'script'}), name="script"),
 
     url(r'^deleteUser/', UserViewset.as_view(
         {'post': 'destroy'})),

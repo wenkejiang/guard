@@ -3,8 +3,9 @@ from django.shortcuts import render
 # Create your views here.
 from rest_framework import viewsets
 from rest_framework.response import Response
-from monitor.auto_operation.autoGitInfo import GitInfo
 from monitor.models import Job, Git
+from monitor.operation.gitInfo import GitInfo
+from monitor.operation.scriptFromGit import Script
 from monitor.serializers import JobSerializer, GitSerializer
 
 class JobViewset(viewsets.ModelViewSet):
@@ -33,6 +34,17 @@ class GitInfoViewset(viewsets.ModelViewSet):
         params = request.query_params
         mgs = GitInfo().get_project(params.get('groups_name'), params.get('project_name'))
         return Response(data=mgs)
+
+class ScriptViewset(viewsets.ModelViewSet):
+
+    def script(self, request, *args, **kwargs):
+        params = request.query_params
+        mgs = Script().get_script(params.get('project_name'))
+        return Response(data=mgs)
+
+
+
+
 
 
 

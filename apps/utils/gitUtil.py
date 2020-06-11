@@ -66,23 +66,27 @@ class Git_Cmd(object):
     2.git clone
     """
 
-    def __init__(self, script_path=None, project_name=None, project_path=None, cmd=None):
-        self.script_path = script_path
-        self.project_name = project_name
-        self.project_path = project_path
-        self.cmd = cmd
-        self.script_projrct_path = script_path+'/'+project_path
+    # def __init__(self, script_path=settings.script_path, project_name=None, project_path=None, cmd=None):
+    #     self.script_path = script_path
+    #     self.project_name = project_name
+    #     self.project_path = project_path
+    #     self.cmd = cmd
+    #     self.script_projrct_path = script_path + '/' + project_name
 
-    def get_clone_project(self):
+    def get_clone_project(self,project_path,project_name):
+        """
+        从git上clone项目到本地
+        :return:
+        """
         try:
-            os.chdir(self.script_path)
+            os.chdir(settings.script_path)
         except Exception as e:
             raise Exception(e)
         util = Utils()
-        util.run_cmd('git clone {git}'.format(git=self.project_path))
-        logger.info("本地没有，clone调度{val}成功！".format(val=self.project_name))
+        util.run_cmd('git clone {git}'.format(git=project_path))
+        logger.info("本地没有，clone调度{val}成功！".format(val=project_name))
 
-    def get_pull_project(self):
+    def get_pull_project(self,script_projrct_path, project_name):
         """
         从git拉取项目文件到本地, 强制覆盖本地文件
         :param script_path: 本地存放脚本路径
@@ -90,7 +94,7 @@ class Git_Cmd(object):
         :return:
         """
         try:
-            os.chdir(self.script_projrct_path)
+            os.chdir(script_projrct_path)
         except Exception as e:
             raise Exception(e)
         try:
@@ -99,7 +103,7 @@ class Git_Cmd(object):
             util.run_cmd('git reset --hard origin/master')
             util.run_cmd('git pull')
 
-            logger.info('已获取最新用例, 脚本路径：{path}'.format(path=self.project_name))
+            logger.info('已获取最新用例, 脚本路径：{path}'.format(path=project_name))
         except Exception as e:
             logger.error('执行git命令异常: {e}'.format(e=e))
 
