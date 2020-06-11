@@ -22,19 +22,19 @@ from users.views import *
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
 
-router=DefaultRouter()
+router = DefaultRouter()
 # 配置注册的URL
-router.register('register',UserRegViewset,basename='register')
+router.register('register', UserRegViewset, basename='register')
 
 # # Job信息
-router.register('job', JobViewset,basename='monitorJob')
+router.register('job', JobViewset, basename='monitorJob')
 
 # # 获取git信息
-router.register('getUrl', GitInfoViewset,basename='getUrl')
+router.register('getUrl', GitInfoViewset, basename='getUrl')
 
 urlpatterns = [
     url(r'', include(router.urls)),
-    #创建API文档
+    # 创建API文档
     url(r'docs/', include_docs_urls(title="测试平台")),
     # jwt的认证接口
     url(r'^login/', obtain_jwt_token),
@@ -49,10 +49,13 @@ urlpatterns = [
     # 获取项目 info数据入库
     url(r'^projectInfo/', GitInfoViewset.as_view({'get': 'project_info'}), name="projectInfo"),
 
-    url(r'^script/', ScriptViewset.as_view({'post': 'script'}), name="script"),
+    url(r'^start_script/', ScriptViewset.as_view({'post': 'start_script'}), name="start_script"),
+
+    url(r'^stop_script/', ScriptViewset.as_view({'get': 'stop_script'}), name="stop_script"),
+
+
 
     url(r'^deleteUser/', UserViewset.as_view(
         {'post': 'destroy'})),
 
 ]
-

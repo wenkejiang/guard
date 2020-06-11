@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="564a4f9d-4b0c-48b9-bd77-821484f03dd9" name="Default Changelist" comment="" />
+    <list default="true" id="564a4f9d-4b0c-48b9-bd77-821484f03dd9" name="Default Changelist" comment="监控任务编辑 执行">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/monitor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/monitor/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/monitor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/monitor/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/guard/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +46,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -272,7 +277,7 @@
       <workItem from="1591168905705" duration="23000" />
       <workItem from="1591183086465" duration="48363000" />
       <workItem from="1591439012846" duration="33400000" />
-      <workItem from="1591860652658" duration="2218000" />
+      <workItem from="1591860652658" duration="8865000" />
     </task>
     <task id="LOCAL-00001" summary="修改setting.xml文件，换成mysql数据库&#10;新增忽略文件">
       <created>1590732272331</created>
@@ -393,11 +398,29 @@
       <option name="project" value="LOCAL" />
       <updated>1591862845877</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="监控任务执行 调度">
+      <created>1591862908398</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1591862908398</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改setting.xml文件，换成mysql数据库&#10;新增忽略文件" />
@@ -430,11 +453,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591853219880" />
-    <state x="554" y="137" key="CommitChangelistDialog2" timestamp="1591862845721">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="416" y="67" key="CommitChangelistDialog2" timestamp="1591873783488">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="416" y="67" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591412131364" />
-    <state x="554" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1591862845721" />
+    <state x="416" y="67" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591873783488" />
+    <state x="554" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1591862908260" />
     <state x="748" y="301" key="FileChooserDialogImpl" timestamp="1591185744830">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -475,19 +498,20 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="936" height="375" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439218" />
-    <state x="469" y="179" key="SettingsEditor" timestamp="1591185758105">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="352" y="149" key="SettingsEditor" timestamp="1591873932858">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="352" y="149" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1591873932858" />
     <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1591185758105" />
-    <state x="560" y="280" key="Vcs.Push.Dialog.v2" timestamp="1591862872833">
+    <state x="560" y="280" key="Vcs.Push.Dialog.v2" timestamp="1591862926848">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="420" y="233" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591412133260" />
-    <state x="560" y="280" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1591862872833" />
-    <state x="479" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1591439013429">
+    <state x="560" y="280" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1591862926848" />
+    <state x="479" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1591873953846">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="479" y="310" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1591439013429" />
+    <state x="479" y="310" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1591873953846" />
     <state x="639" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591183336851" />
     <state x="93" y="21" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591432211773">
       <screen x="0" y="0" width="1440" height="900" />
@@ -501,10 +525,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="378" y="207" width="756" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1591441766655" />
-    <state x="513" y="235" width="894" height="812" key="search.everywhere.popup" timestamp="1591861882072">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1591867033480">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1591415457109" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1591867033480" />
     <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1591861882072" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

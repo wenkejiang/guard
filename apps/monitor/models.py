@@ -41,3 +41,5 @@ class Job(models.Model):
     class Meta:
         verbose_name = "调度任务信息"
         verbose_name_plural = verbose_name
+        ordering = ['-id']
+
