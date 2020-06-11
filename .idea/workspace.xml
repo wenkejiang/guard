@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="564a4f9d-4b0c-48b9-bd77-821484f03dd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/monitor/auto_operation/autoGitInfo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/monitor/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/utils/gitUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/utils/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/monitor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/monitor/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/monitor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/monitor/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/utils/render_response.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/render_response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/utils/scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/scheduler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/utils/weChat.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/weChat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/guard/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/guard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/gitUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/gitUtil.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +55,7 @@
       <recent name="$PROJECT_DIR$/apps" />
     </key>
   </component>
-  <component name="RunManager" selected="Django server.guard">
+  <component name="RunManager" selected="Python.utils">
     <configuration name="autoGitInfo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="guard" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,6 +116,28 @@
         </ENTRIES>
       </EXTENSION>
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/gitUtil.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="guard" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,9 +219,11 @@
       <item itemvalue="Python.weChat" />
       <item itemvalue="Python.gitUtil" />
       <item itemvalue="Python.autoGitInfo" />
+      <item itemvalue="Python.utils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.utils" />
         <item itemvalue="Python.autoGitInfo" />
         <item itemvalue="Python.gitUtil" />
         <item itemvalue="Python.weChat" />
@@ -235,7 +251,7 @@
       <workItem from="1591166259886" duration="148000" />
       <workItem from="1591168905705" duration="23000" />
       <workItem from="1591183086465" duration="48363000" />
-      <workItem from="1591439012846" duration="17945000" />
+      <workItem from="1591439012846" duration="22579000" />
     </task>
     <task id="LOCAL-00001" summary="修改setting.xml文件，换成mysql数据库&#10;新增忽略文件">
       <created>1590732272331</created>
@@ -314,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591412131500</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="monitor监控">
+      <created>1591782214379</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1591782214379</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +353,8 @@
     <MESSAGE value="正则匹配汉字" />
     <MESSAGE value="调度任务和发送信息" />
     <MESSAGE value="新建monitor的APP" />
-    <option name="LAST_COMMIT_MESSAGE" value="新建monitor的APP" />
+    <MESSAGE value="monitor监控" />
+    <option name="LAST_COMMIT_MESSAGE" value="monitor监控" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591627074474">
@@ -346,34 +370,34 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591241273847" />
-    <state x="416" y="67" key="CommitChangelistDialog2" timestamp="1591412131364">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="554" y="137" key="CommitChangelistDialog2" timestamp="1591782214151">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="416" y="67" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591412131364" />
-    <state x="554" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1591166028979" />
+    <state x="554" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1591782214151" />
     <state x="748" y="301" key="FileChooserDialogImpl" timestamp="1591185744830">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="748" y="301" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1591185744830" />
-    <state width="1392" height="351" key="GridCell.Tab.0.bottom" timestamp="1591627740324">
+    <state width="1392" height="351" key="GridCell.Tab.0.bottom" timestamp="1591786646674">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1392" height="351" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591627740324" />
+    <state width="1392" height="351" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591786646674" />
     <state width="936" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439216" />
-    <state width="1392" height="351" key="GridCell.Tab.0.center" timestamp="1591627740322">
+    <state width="1392" height="351" key="GridCell.Tab.0.center" timestamp="1591786646672">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1392" height="351" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1591627740322" />
+    <state width="1392" height="351" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1591786646672" />
     <state width="936" height="375" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439215" />
-    <state width="1392" height="351" key="GridCell.Tab.0.left" timestamp="1591627740321">
+    <state width="1392" height="351" key="GridCell.Tab.0.left" timestamp="1591786646671">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1392" height="351" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1591627740321" />
+    <state width="1392" height="351" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1591786646671" />
     <state width="936" height="375" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439214" />
-    <state width="1392" height="351" key="GridCell.Tab.0.right" timestamp="1591627740323">
+    <state width="1392" height="351" key="GridCell.Tab.0.right" timestamp="1591786646673">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1392" height="351" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1591627740323" />
+    <state width="1392" height="351" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1591786646673" />
     <state width="936" height="375" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591008439215" />
     <state width="936" height="375" key="GridCell.Tab.1.bottom" timestamp="1591008439218">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -395,11 +419,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1591185758105" />
-    <state x="420" y="233" key="Vcs.Push.Dialog.v2" timestamp="1591412133260">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="560" y="280" key="Vcs.Push.Dialog.v2" timestamp="1591782216143">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="420" y="233" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591412133260" />
-    <state x="560" y="280" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1591166276329" />
+    <state x="560" y="280" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1591782216143" />
     <state x="479" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1591439013429">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -426,5 +450,6 @@
     <SUITE FILE_PATH="coverage/guard$gitUtil.coverage" NAME="gitUtil Coverage Results" MODIFIED="1591616197529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
     <SUITE FILE_PATH="coverage/guard$autoGitInfo.coverage" NAME="autoGitInfo Coverage Results" MODIFIED="1591627237157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/monitor/auto_operation" />
     <SUITE FILE_PATH="coverage/guard$weChat.coverage" NAME="weChat Coverage Results" MODIFIED="1591411719977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
+    <SUITE FILE_PATH="coverage/guard$utils.coverage" NAME="utils Coverage Results" MODIFIED="1591786596064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
   </component>
 </project>
