@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="564a4f9d-4b0c-48b9-bd77-821484f03dd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/monitor/operation/scriptFromGit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/monitor/auto_operation/autoGitInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/monitor/operation/gitInfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/monitor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/monitor/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/utils/gitUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/gitUtil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/guard/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/guard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/monitor/operation/scriptFromGit.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/monitor/operation/scriptFromGit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +275,7 @@
       <workItem from="1591166259886" duration="148000" />
       <workItem from="1591168905705" duration="23000" />
       <workItem from="1591183086465" duration="48363000" />
-      <workItem from="1591439012846" duration="27245000" />
+      <workItem from="1591439012846" duration="28340000" />
     </task>
     <task id="LOCAL-00001" summary="修改setting.xml文件，换成mysql数据库&#10;新增忽略文件">
       <created>1590732272331</created>
@@ -372,7 +368,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591841127178</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="script git pull | git clone&#10;代码提交">
+      <created>1591846788632</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1591846788633</updated>
+    </task>
+    <task id="LOCAL-00015" summary="script git pull | git clone&#10;代码提交">
+      <created>1591846817533</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1591846817533</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +400,8 @@
     <MESSAGE value="新建monitor的APP" />
     <MESSAGE value="monitor监控" />
     <MESSAGE value="添加执行git命令方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加执行git命令方法" />
+    <MESSAGE value="script git pull | git clone&#10;代码提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="script git pull | git clone&#10;代码提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591627074474">
@@ -402,15 +413,15 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="703" y="350" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1591240924139" />
-    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591241273847">
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591853219880">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591241273847" />
-    <state x="554" y="137" key="CommitChangelistDialog2" timestamp="1591846788418">
+    <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591853219880" />
+    <state x="554" y="137" key="CommitChangelistDialog2" timestamp="1591846817427">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="416" y="67" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591412131364" />
-    <state x="554" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1591846788418" />
+    <state x="554" y="137" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1591846817427" />
     <state x="748" y="301" key="FileChooserDialogImpl" timestamp="1591185744830">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -455,11 +466,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1591185758105" />
-    <state x="560" y="280" key="Vcs.Push.Dialog.v2" timestamp="1591846790182">
+    <state x="560" y="280" key="Vcs.Push.Dialog.v2" timestamp="1591846842391">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="420" y="233" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591412133260" />
-    <state x="560" y="280" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1591846790182" />
+    <state x="560" y="280" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1591846842391" />
     <state x="479" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1591439013429">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

@@ -36,6 +36,8 @@ class Script(object):
                 project_path = obj.git_url
                 git = Git_Cmd()
                 git.get_clone_project(project_path, project_name)
+                return "git clone 成功"
+
             except Exception:
                 return "该项目不存在"
 
