@@ -119,11 +119,11 @@ JWT_AUTH = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'guard',
-        'USER': 'root',
-        'PASSWORD': 'Dkaixy@917810',
-        'HOST': '106.13.238.8',
-        'PORT': '3306'
+        'NAME': 'xxxxxxx',
+        'USER': 'xxx',
+        'PASSWORD': 'xxx',
+        'HOST': 'xxxxxx',
+        'PORT': 'xxx'
     }
 }
 
@@ -244,16 +244,16 @@ LOGGING = {
 
 # 业务配置
 # 企业微信信息配置
-CORPID = 'wwcaca99303b016ebc'
-SECRET = 'X1ofWFo0iS-Mlism2nxvIvSl_ZKC6tzHo1d3KROv7Mg'
-AGENTID = 1000023
+CORPID = 'xxx'
+SECRET = 'xxx'
+AGENTID = 'xxx'
 
 
 # git信息
 # git group的id
-GROUPS_ID = '617'
+GROUPS_ID = 'xxx'
 # token
-PRIVATE_TOKEN = 'zHc4USHE1FybCsb9m-wi'
+PRIVATE_TOKEN = 'xxx'
 
 script_path='/Users/jiangwenke/DevOps/test_scripts/httprunner_scripts'
 target_path='/Users/jiangwenke/DevOps/test_scripts/httprunner_reports'
